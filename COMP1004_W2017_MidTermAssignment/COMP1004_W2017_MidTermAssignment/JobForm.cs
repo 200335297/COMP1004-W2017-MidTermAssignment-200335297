@@ -16,5 +16,30 @@ namespace COMP1004_W2017_MidTermAssignment
         {
             InitializeComponent();
         }
+
+        private void CultistRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MagickerRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RogueRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SoldierRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,6 +51,7 @@
             this.NextButton.TabIndex = 3;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // jobGroupBox
             // 
@@ -76,6 +77,7 @@
             this.cultistRadioButton.TabIndex = 3;
             this.cultistRadioButton.Text = "Cultist";
             this.cultistRadioButton.UseVisualStyleBackColor = true;
+            this.cultistRadioButton.CheckedChanged += new System.EventHandler(this.CultistRadioButton_CheckedChanged);
             // 
             // magickerRadioButton
             // 
@@ -87,6 +89,7 @@
             this.magickerRadioButton.TabIndex = 2;
             this.magickerRadioButton.Text = "Magicker";
             this.magickerRadioButton.UseVisualStyleBackColor = true;
+            this.magickerRadioButton.CheckedChanged += new System.EventHandler(this.MagickerRadioButton_CheckedChanged);
             // 
             // rogueRadioButton
             // 
@@ -98,6 +101,7 @@
             this.rogueRadioButton.TabIndex = 1;
             this.rogueRadioButton.Text = "Rogue";
             this.rogueRadioButton.UseVisualStyleBackColor = true;
+            this.rogueRadioButton.CheckedChanged += new System.EventHandler(this.RogueRadioButton_CheckedChanged);
             // 
             // soldierRadioButton
             // 
@@ -111,6 +115,7 @@
             this.soldierRadioButton.TabStop = true;
             this.soldierRadioButton.Text = "Soldier";
             this.soldierRadioButton.UseVisualStyleBackColor = true;
+            this.soldierRadioButton.CheckedChanged += new System.EventHandler(this.SoldierRadioButton_CheckedChanged);
             // 
             // healthPointLabel
             // 
