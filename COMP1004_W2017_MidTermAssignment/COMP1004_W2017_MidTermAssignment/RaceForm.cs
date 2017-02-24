@@ -27,6 +27,7 @@ namespace COMP1004_W2017_MidTermAssignment
         public RaceForm()
         {
             InitializeComponent();
+          this._initialload();
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -43,12 +44,30 @@ namespace COMP1004_W2017_MidTermAssignment
             this.Hide();
         }
 
+        private void _initialload()
+        {
+            CharacterPictureBox.Image = Properties.Resources.Human;
+            
+
+            RacialBonusTextBox.Text = "Increase all abilities by 5";
+
+            _StrengthMod = _StrengthMod + 5;
+            _DexterityMod = _DexterityMod + 5;
+            _EnduranceMod = _EnduranceMod + 5;
+            _IntellegenceMod = _IntellegenceMod + 5;
+            _PerceptionMod = _PerceptionMod + 5;
+            _CharismaMod = _CharismaMod + 5;
+
+
+            this._selectedRace = "Human";
+        }
+
         private void HumanRadioButton_CheckedChanged_1(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.Human;
             RadioButton selectedRace = (RadioButton)sender;
 
-            RacialBonusTextBox.Text = "Increase all abilities by 10";
+            RacialBonusTextBox.Text = "Increase all abilities by 5";
 
             _StrengthMod = _StrengthMod + 5;
             _DexterityMod = _DexterityMod + 5;

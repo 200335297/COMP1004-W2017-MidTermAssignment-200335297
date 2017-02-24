@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -56,7 +55,7 @@ namespace COMP1004_W2017_MidTermAssignment
         private void RollButton_Click(object sender, EventArgs e)
         {
             RollAbilities();
-            Debug.WriteLine(Roll3D10().ToString());
+            
         }
 
 

@@ -31,6 +31,7 @@ namespace COMP1004_W2017_MidTermAssignment
         public JobForm()
         {
             InitializeComponent();
+            this._initialload();
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -47,25 +48,32 @@ namespace COMP1004_W2017_MidTermAssignment
 
             finalForm.Show();
         }
-
-        private void SoldierRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void _initialload()
         {
             healthPointTextBox.Text = (_soldierHealth + _EnduranceHealthMod).ToString();
+
         }
 
-        private void RogueRadioButton_CheckedChanged(object sender, EventArgs e)
+      
+        private void RadioButton_CheckeChanged(object sender, EventArgs e)
         {
-            healthPointTextBox.Text = (_rogueHealth + _DexterityHealthMod).ToString();
-        }
+            RadioButton selected = sender as RadioButton;
+            switch (selected.Text)
+            {
+                case "Soldier":
+                    healthPointTextBox.Text = (_soldierHealth + _EnduranceHealthMod).ToString();
+                    break;
+                case "Rogue":
+                    healthPointTextBox.Text = (_rogueHealth + _DexterityHealthMod).ToString();
+                    break;
+                case "Magicker":
+                    healthPointTextBox.Text = (_magickerHealth + _IntellegenceHealthMod).ToString();
+                    break;
+                case "Cultist":
+                    healthPointTextBox.Text = (_cultistHealth + _CharismaHealthMod).ToString();
+                    break;
+            }
 
-        private void MagickerRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            healthPointTextBox.Text = (_magickerHealth + _IntellegenceHealthMod).ToString();
-        }
-
-        private void CultistRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            healthPointTextBox.Text = (_cultistHealth + _CharismaHealthMod).ToString();
         }
     }
 }
