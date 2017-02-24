@@ -84,7 +84,7 @@ namespace COMP1004_W2017_MidTermAssignment
             _StrengthMod = _StrengthMod + 20;
             _PerceptionMod = _PerceptionMod + 20;
             _CharismaMod = _CharismaMod - 10;
-            this._selectedRace = selectedRace.Text
+            this._selectedRace = selectedRace.Text;
 
         }
 

@@ -8,11 +8,15 @@ namespace COMP1004_W2017_MidTermAssignment
 {
     static class Program
     {
+        public static Character character = new Character();
+
+
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -136,11 +136,12 @@
             // 
             // CharacterPictureBox
             // 
+            this.CharacterPictureBox.InitialImage = null;
             this.CharacterPictureBox.Location = new System.Drawing.Point(303, 46);
             this.CharacterPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.CharacterPictureBox.Name = "CharacterPictureBox";
             this.CharacterPictureBox.Size = new System.Drawing.Size(290, 262);
-            this.CharacterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.CharacterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.CharacterPictureBox.TabIndex = 5;
             this.CharacterPictureBox.TabStop = false;
             // 

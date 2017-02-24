@@ -452,9 +452,10 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(390, 161);
+            this.pictureBox.Location = new System.Drawing.Point(333, 161);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(239, 287);
+            this.pictureBox.Size = new System.Drawing.Size(296, 287);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox.TabIndex = 5;
             this.pictureBox.TabStop = false;
             // 
@@ -472,7 +473,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FinalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Your Character Selections";
+            this.Text = "Selection";
             this.Load += new System.EventHandler(this.FinalForm_Load);
             this.abilitiesGroupBox.ResumeLayout(false);
             this.abilitiesGroupBox.PerformLayout();

@@ -27,19 +27,19 @@ namespace COMP1004_W2017_MidTermAssignment
             Stats();
             if (raceTextBox.Text == "Human")
             {
-                pictureBox.Image = Properties.Resources.M_Human1;
+                pictureBox.Image = Properties.Resources.Human;
             }
             else if (raceTextBox.Text == "Elf")
             {
-                pictureBox.Image = Properties.Resources.M_Elf1;
+                pictureBox.Image = Properties.Resources.Elf;
             }
             else if (raceTextBox.Text == "Dwarf")
             {
-                pictureBox.Image = Properties.Resources.M_Dwarf1;
+                pictureBox.Image = Properties.Resources.dwarf;
             }
             else if (raceTextBox.Text == "Halfling")
             {
-                pictureBox.Image = Properties.Resources.M_Halfling2;
+                pictureBox.Image = Properties.Resources.Halfling;
             }
         }
 
