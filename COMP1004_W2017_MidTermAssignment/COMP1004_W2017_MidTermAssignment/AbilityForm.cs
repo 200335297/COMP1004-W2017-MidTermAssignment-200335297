@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace COMP1004_W2017_MidTermAssignment
 {
-    public partial class Form1 : Form
+    public partial class AbilityForm : Form
     {
-        public Form1()
+        public AbilityForm()
         {
             InitializeComponent();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RollButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
