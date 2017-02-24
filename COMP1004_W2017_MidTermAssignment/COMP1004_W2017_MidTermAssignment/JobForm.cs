@@ -15,10 +15,10 @@ namespace COMP1004_W2017_MidTermAssignment
 
         public RaceForm previousForm;
 
-        private int _soldierHealth = 30;
-        private int _rogueHealth = 28;
-        private int _magickerHealth = 15;
-        private int _cultistHealth = 24;
+        private int _Soldier = 30;
+        private int _Rogue = 28;
+        private int _Magicker = 15;
+        private int _Cultist = 24;
 
 
         private int _DexterityHealthMod = Convert.ToInt32(Program.character.DEX);
@@ -50,7 +50,7 @@ namespace COMP1004_W2017_MidTermAssignment
         }
         private void _initialload()
         {
-            healthPointTextBox.Text = (_soldierHealth + _EnduranceHealthMod).ToString();
+            healthPointTextBox.Text = (this._Soldier + _EnduranceHealthMod).ToString();
 
         }
 
@@ -61,16 +61,16 @@ namespace COMP1004_W2017_MidTermAssignment
             switch (selected.Text)
             {
                 case "Soldier":
-                    healthPointTextBox.Text = (_soldierHealth + _EnduranceHealthMod).ToString();
+                    healthPointTextBox.Text = (this._Soldier + _EnduranceHealthMod).ToString();
                     break;
                 case "Rogue":
-                    healthPointTextBox.Text = (_rogueHealth + _DexterityHealthMod).ToString();
+                    healthPointTextBox.Text = (this._Rogue + _DexterityHealthMod).ToString();
                     break;
                 case "Magicker":
-                    healthPointTextBox.Text = (_magickerHealth + _IntellegenceHealthMod).ToString();
+                    healthPointTextBox.Text = (this._Magicker + _IntellegenceHealthMod).ToString();
                     break;
                 case "Cultist":
-                    healthPointTextBox.Text = (_cultistHealth + _CharismaHealthMod).ToString();
+                    healthPointTextBox.Text = (this._Cultist + _CharismaHealthMod).ToString();
                     break;
             }
 
