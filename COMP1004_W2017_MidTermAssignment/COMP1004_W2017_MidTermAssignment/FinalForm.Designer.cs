@@ -170,9 +170,9 @@
             this.PERLabel.Location = new System.Drawing.Point(7, 199);
             this.PERLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PERLabel.Name = "PERLabel";
-            this.PERLabel.Size = new System.Drawing.Size(65, 29);
+            this.PERLabel.Size = new System.Drawing.Size(56, 29);
             this.PERLabel.TabIndex = 21;
-            this.PERLabel.Text = "PER";
+            this.PERLabel.Text = "INT";
             // 
             // INTLabel
             // 
@@ -181,9 +181,9 @@
             this.INTLabel.Location = new System.Drawing.Point(7, 155);
             this.INTLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.INTLabel.Name = "INTLabel";
-            this.INTLabel.Size = new System.Drawing.Size(56, 29);
+            this.INTLabel.Size = new System.Drawing.Size(65, 29);
             this.INTLabel.TabIndex = 20;
-            this.INTLabel.Text = "INT";
+            this.INTLabel.Text = "PER";
             // 
             // ENDLabel
             // 

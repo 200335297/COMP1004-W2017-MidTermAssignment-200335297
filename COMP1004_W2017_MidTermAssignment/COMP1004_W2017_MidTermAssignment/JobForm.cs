@@ -21,10 +21,10 @@ namespace COMP1004_W2017_MidTermAssignment
         private int _Cultist = 24;
         private string _Job;
 
-        private int _DexterityHealthMod = Convert.ToInt32(Program.character.DEX);
-        private int _EnduranceHealthMod = Convert.ToInt32(Program.character.END);
-        private int _IntellegenceHealthMod = Convert.ToInt32(Program.character.INT);
-        private int _CharismaHealthMod = Convert.ToInt32(Program.character.CHA);
+        private int _DexterityHealthMod = Convert.ToInt32(Program.val.DEX);
+        private int _EnduranceHealthMod = Convert.ToInt32(Program.val.END);
+        private int _IntellegenceHealthMod = Convert.ToInt32(Program.val.INT);
+        private int _CharismaHealthMod = Convert.ToInt32(Program.val.CHA);
 
 
 
@@ -36,7 +36,7 @@ namespace COMP1004_W2017_MidTermAssignment
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            Character character = Program.character;
+            Value character = Program.val;
 
             character.Health = healthPointTextBox.Text;
             character.Job = this._Job;

@@ -8,7 +8,7 @@ namespace COMP1004_W2017_MidTermAssignment
 {
     static class Program
     {
-        public static Character character = new Character();
+        public static Value val = new Value();
 
 
 

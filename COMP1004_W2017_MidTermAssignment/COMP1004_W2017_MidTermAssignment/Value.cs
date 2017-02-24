@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace COMP1004_W2017_MidTermAssignment
 {
-    class Character
+    class Value
     {
 
         public string STR { get; set; }

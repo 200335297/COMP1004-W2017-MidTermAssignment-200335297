@@ -17,12 +17,12 @@ namespace COMP1004_W2017_MidTermAssignment
         private string _Race;        //instance variables
       
 
-        private int _StrengthMod = Convert.ToInt32(Program.character.STR);
-        private int _DexterityMod = Convert.ToInt32(Program.character.DEX);
-        private int _EnduranceMod = Convert.ToInt32(Program.character.END);
-        private int _IntellegenceMod = Convert.ToInt32(Program.character.INT);
-        private int _PerceptionMod = Convert.ToInt32(Program.character.PER);
-        private int _CharismaMod = Convert.ToInt32(Program.character.CHA);
+        private int _StrengthMod = Convert.ToInt32(Program.val.STR);
+        private int _DexterityMod = Convert.ToInt32(Program.val.DEX);
+        private int _EnduranceMod = Convert.ToInt32(Program.val.END);
+        private int _IntellegenceMod = Convert.ToInt32(Program.val.INT);
+        private int _PerceptionMod = Convert.ToInt32(Program.val.PER);
+        private int _CharismaMod = Convert.ToInt32(Program.val.CHA);
 
 
         public RaceForm()
@@ -33,7 +33,7 @@ namespace COMP1004_W2017_MidTermAssignment
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            Character character = Program.character;
+            Value character = Program.val;
 
             character.Race = _Race;
             this.RadioButton_Selected();
@@ -51,28 +51,28 @@ namespace COMP1004_W2017_MidTermAssignment
             switch (this._Race)
             {
                 case "Human":
-                    Program.character.STR = Convert.ToString(_StrengthMod + 5);
-                    Program.character.DEX = Convert.ToString(_DexterityMod + 5);
-                    Program.character.END = Convert.ToString(_EnduranceMod + 5);
-                    Program.character.INT = Convert.ToString(_IntellegenceMod + 5);
-                    Program.character.PER = Convert.ToString(_PerceptionMod + 5);
-                    Program.character.CHA = Convert.ToString(_CharismaMod + 5);
+                    Program.val.STR = Convert.ToString(_StrengthMod + 5);
+                    Program.val.DEX = Convert.ToString(_DexterityMod + 5);
+                    Program.val.END = Convert.ToString(_EnduranceMod + 5);
+                    Program.val.INT = Convert.ToString(_IntellegenceMod + 5);
+                    Program.val.PER = Convert.ToString(_PerceptionMod + 5);
+                    Program.val.CHA = Convert.ToString(_CharismaMod + 5);
 
                     break;
                 case "Elf":
-                    Program.character.DEX = Convert.ToString(_DexterityMod + 15);
-                    Program.character.CHA = Convert.ToString(_CharismaMod + 15);
+                    Program.val.DEX = Convert.ToString(_DexterityMod + 15);
+                    Program.val.CHA = Convert.ToString(_CharismaMod + 15);
                     break;
                 case "Dwarf":
-                    Program.character.STR = Convert.ToString(_StrengthMod + 20);
-                    Program.character.PER = Convert.ToString(_PerceptionMod + 20);
-                    Program.character.CHA = Convert.ToString(_CharismaMod - 10);
+                    Program.val.STR = Convert.ToString(_StrengthMod + 20);
+                    Program.val.PER = Convert.ToString(_PerceptionMod+20);
+                    Program.val.CHA = Convert.ToString(_CharismaMod - 10);
                     
                     break;
                 case "Halfling":
-                    Program.character.DEX = Convert.ToString(_DexterityMod + 20);
-                    Program.character.INT = Convert.ToString(_IntellegenceMod + 20);
-                    Program.character.STR = Convert.ToString(_StrengthMod - 10);
+                    Program.val.DEX = Convert.ToString(_DexterityMod + 20);
+                    Program.val.INT = Convert.ToString(_IntellegenceMod + 20);
+                    Program.val.STR = Convert.ToString(_StrengthMod - 10);
                    
                     break;
             }
@@ -83,7 +83,7 @@ namespace COMP1004_W2017_MidTermAssignment
             CharacterPictureBox.Image = Properties.Resources.Human;
             
 
-            RacialBonusTextBox.Text = "Increase all abilities by 5";
+            RacialBonusTextBox.Text = "Increase all Character’s	 abilities by 5 points";
 
             this._Race = "Human";
         }
@@ -93,7 +93,7 @@ namespace COMP1004_W2017_MidTermAssignment
             CharacterPictureBox.Image = Properties.Resources.Human;
             RadioButton selectedRace = (RadioButton)sender;
 
-            RacialBonusTextBox.Text = "Increase all abilities by 5";
+            RacialBonusTextBox.Text = "Increase all Character’s	 abilities by 5 points";
 
           this._Race = selectedRace.Text;
         }
@@ -103,7 +103,7 @@ namespace COMP1004_W2017_MidTermAssignment
 
             CharacterPictureBox.Image = Properties.Resources.Elf;
             RadioButton selectedRace = (RadioButton)sender;
-            RacialBonusTextBox.Text = "Increase DEX and PER by 20";
+            RacialBonusTextBox.Text = "Increase	the	Character’s	DEX and	CHA by	15 points";
             
 
             this._Race = selectedRace.Text;
@@ -114,7 +114,7 @@ namespace COMP1004_W2017_MidTermAssignment
         {
             CharacterPictureBox.Image = Properties.Resources.dwarf;
             RadioButton selectedRace = (RadioButton)sender;
-            RacialBonusTextBox.Text = "Increase STR and PER by 20, Decrease CHA by 10";
+            RacialBonusTextBox.Text = "Increase STR and PER by 20 points, Decrease CHA by 10 points";
 
             this._Race = selectedRace.Text;
 
@@ -125,7 +125,7 @@ namespace COMP1004_W2017_MidTermAssignment
             CharacterPictureBox.Image = Properties.Resources.Halfling;
             RadioButton selectedRace = (RadioButton)sender;
 
-            RacialBonusTextBox.Text = "Increase DEX and INT by 20, Decrease STR by 10";
+            RacialBonusTextBox.Text = "Increase DEX and INT by 20 points, Decrease STR by 10 points";
             this._Race = selectedRace.Text;
 
         }

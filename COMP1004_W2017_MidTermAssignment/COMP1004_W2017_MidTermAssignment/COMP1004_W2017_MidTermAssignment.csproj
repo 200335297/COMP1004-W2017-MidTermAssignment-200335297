@@ -58,7 +58,7 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Character.cs" />
+    <Compile Include="Value.cs" />
     <Compile Include="FinalForm.cs">
       <SubType>Form</SubType>
     </Compile>

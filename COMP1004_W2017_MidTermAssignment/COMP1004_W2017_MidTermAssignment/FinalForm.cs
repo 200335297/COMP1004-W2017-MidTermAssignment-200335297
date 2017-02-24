@@ -50,7 +50,7 @@ namespace COMP1004_W2017_MidTermAssignment
         /// <param name="e"></param>
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Sending to Printer For Printing.....");
+            MessageBox.Show(" Printing.....");
         }
 
         /// <summary>
@@ -99,15 +99,15 @@ namespace COMP1004_W2017_MidTermAssignment
 
         public void Stats()
         {
-            healthTextBox.Text = Program.character.Health;
-            raceTextBox.Text = Program.character.Race;
-            jobTextBox.Text = Program.character.Job;
-            STRTextBox.Text = Program.character.STR;
-            DEXTextBox.Text = Program.character.DEX;
-            ENDTextBox.Text = Program.character.END;
-            INTTextBox.Text = Program.character.INT;
-            PERTextBox.Text = Program.character.PER;
-            CHATextBox.Text = Program.character.CHA;
+            healthTextBox.Text = Program.val.Health;
+            raceTextBox.Text = Program.val.Race;
+            jobTextBox.Text = Program.val.Job;
+            STRTextBox.Text = Program.val.STR;
+            DEXTextBox.Text = Program.val.DEX;
+            ENDTextBox.Text = Program.val.END;
+            INTTextBox.Text = Program.val.INT;
+            PERTextBox.Text = Program.val.PER;
+            CHATextBox.Text = Program.val.CHA;
         }
     }
 }
