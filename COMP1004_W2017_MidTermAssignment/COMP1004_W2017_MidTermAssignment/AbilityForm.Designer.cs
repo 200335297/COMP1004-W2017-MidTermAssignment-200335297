@@ -209,7 +209,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AbilityForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Roll Your Abilities";
+            this.Text = "Abilities";
             this.ResumeLayout(false);
             this.PerformLayout();
 

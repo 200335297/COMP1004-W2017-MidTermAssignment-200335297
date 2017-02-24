@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaceForm.Designer.cs">
+      <DependentUpon>RaceForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AbilityForm.resx">
       <DependentUpon>AbilityForm.cs</DependentUpon>
     </EmbeddedResource>
