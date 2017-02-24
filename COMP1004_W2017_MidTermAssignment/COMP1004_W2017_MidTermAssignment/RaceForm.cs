@@ -14,7 +14,7 @@ namespace COMP1004_W2017_MidTermAssignment
     {
 
         public AbilityForm previousForm;
-        private string _selectedRace;        //instance variables
+        private string _Race;        //instance variables
 
         private int _StrengthMod = Convert.ToInt32(Program.character.STR);
         private int _DexterityMod = Convert.ToInt32(Program.character.DEX);
@@ -34,7 +34,7 @@ namespace COMP1004_W2017_MidTermAssignment
         {
             Character character = Program.character;
 
-            character.Race = _selectedRace;
+            character.Race = _Race;
 
 
             JobForm jobForm = new JobForm();
@@ -59,7 +59,7 @@ namespace COMP1004_W2017_MidTermAssignment
             _CharismaMod = _CharismaMod + 5;
 
 
-            this._selectedRace = "Human";
+            this._Race = "Human";
         }
 
         private void HumanRadioButton_CheckedChanged_1(object sender, EventArgs e)
@@ -77,7 +77,7 @@ namespace COMP1004_W2017_MidTermAssignment
             _CharismaMod = _CharismaMod + 5;
 
 
-            this._selectedRace = selectedRace.Text;
+            this._Race = selectedRace.Text;
         }
 
         private void ElfRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace COMP1004_W2017_MidTermAssignment
             _DexterityMod = _DexterityMod + 20;
             _PerceptionMod = _PerceptionMod + 20;
 
-            this._selectedRace = selectedRace.Text;
+            this._Race = selectedRace.Text;
 
         }
 
@@ -103,7 +103,7 @@ namespace COMP1004_W2017_MidTermAssignment
             _StrengthMod = _StrengthMod + 20;
             _PerceptionMod = _PerceptionMod + 20;
             _CharismaMod = _CharismaMod - 10;
-            this._selectedRace = selectedRace.Text;
+            this._Race = selectedRace.Text;
 
         }
 
@@ -117,7 +117,7 @@ namespace COMP1004_W2017_MidTermAssignment
             _IntellegenceMod = _IntellegenceMod + 20;
             _StrengthMod = _StrengthMod - 10;
 
-            this._selectedRace = selectedRace.Text;
+            this._Race = selectedRace.Text;
 
         }
 

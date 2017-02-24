@@ -19,7 +19,7 @@ namespace COMP1004_W2017_MidTermAssignment
         private int _Rogue = 28;
         private int _Magicker = 15;
         private int _Cultist = 24;
-
+        private string _Job;
 
         private int _DexterityHealthMod = Convert.ToInt32(Program.character.DEX);
         private int _EnduranceHealthMod = Convert.ToInt32(Program.character.END);
@@ -39,6 +39,7 @@ namespace COMP1004_W2017_MidTermAssignment
             Character character = Program.character;
 
             character.Health = healthPointTextBox.Text;
+            character.Job = this._Job;
 
             this.Hide();
 
@@ -51,6 +52,7 @@ namespace COMP1004_W2017_MidTermAssignment
         private void _initialload()
         {
             healthPointTextBox.Text = (this._Soldier + _EnduranceHealthMod).ToString();
+            this._Job = "Soilder";
 
         }
 
@@ -62,15 +64,19 @@ namespace COMP1004_W2017_MidTermAssignment
             {
                 case "Soldier":
                     healthPointTextBox.Text = (this._Soldier + _EnduranceHealthMod).ToString();
+                    this._Job = selected.Text;
                     break;
                 case "Rogue":
                     healthPointTextBox.Text = (this._Rogue + _DexterityHealthMod).ToString();
+                    this._Job = selected.Text;
                     break;
                 case "Magicker":
                     healthPointTextBox.Text = (this._Magicker + _IntellegenceHealthMod).ToString();
+                    this._Job = selected.Text;
                     break;
                 case "Cultist":
                     healthPointTextBox.Text = (this._Cultist + _CharismaHealthMod).ToString();
+                    this._Job = selected.Text;
                     break;
             }
 
