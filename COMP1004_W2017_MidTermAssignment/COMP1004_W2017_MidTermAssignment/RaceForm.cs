@@ -64,7 +64,7 @@ namespace COMP1004_W2017_MidTermAssignment
         private void ElfRadioButton_CheckedChanged(object sender, EventArgs e)
         {
 
-            CharacterPictureBox.Image = Properties.Resources.M_Elf1;
+            CharacterPictureBox.Image = Properties.Resources.Elf;
             RadioButton selectedRace = (RadioButton)sender;
             RacialBonusTextBox.Text = "Increase DEX and PER by 20";
 
@@ -77,20 +77,20 @@ namespace COMP1004_W2017_MidTermAssignment
 
         private void DwarfRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            CharacterPictureBox.Image = Properties.Resources.M_Dwarf1;
+            CharacterPictureBox.Image = Properties.Resources.dwarf;
             RadioButton selectedRace = (RadioButton)sender;
             RacialBonusTextBox.Text = "Increase STR and PER by 20, Decrease CHA by 10";
 
             _StrengthMod = _StrengthMod + 20;
             _PerceptionMod = _PerceptionMod + 20;
             _CharismaMod = _CharismaMod - 10;
-            this._selectedRace = selectedRace.Text;
+            this._selectedRace = selectedRace.Text
 
         }
 
         private void HalflingRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            CharacterPictureBox.Image = Properties.Resources.M_Halfling2;
+            CharacterPictureBox.Image = Properties.Resources.Halfling;
             RadioButton selectedRace = (RadioButton)sender;
 
             RacialBonusTextBox.Text = "Increase DEX and INT by 20, Decrease STR by 10";
