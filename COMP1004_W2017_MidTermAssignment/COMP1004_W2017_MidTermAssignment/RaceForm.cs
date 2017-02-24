@@ -15,6 +15,7 @@ namespace COMP1004_W2017_MidTermAssignment
 
         public AbilityForm previousForm;
         private string _Race;        //instance variables
+      
 
         private int _StrengthMod = Convert.ToInt32(Program.character.STR);
         private int _DexterityMod = Convert.ToInt32(Program.character.DEX);
@@ -35,7 +36,7 @@ namespace COMP1004_W2017_MidTermAssignment
             Character character = Program.character;
 
             character.Race = _Race;
-
+            this.RadioButton_Selected();
 
             JobForm jobForm = new JobForm();
             jobForm.previousForm = this;
@@ -44,20 +45,45 @@ namespace COMP1004_W2017_MidTermAssignment
             this.Hide();
         }
 
+        private void RadioButton_Selected()
+        {
+            
+            switch (this._Race)
+            {
+                case "Human":
+                    Program.character.STR = Convert.ToString(_StrengthMod + 5);
+                    Program.character.DEX = Convert.ToString(_DexterityMod + 5);
+                    Program.character.END = Convert.ToString(_EnduranceMod + 5);
+                    Program.character.INT = Convert.ToString(_IntellegenceMod + 5);
+                    Program.character.PER = Convert.ToString(_PerceptionMod + 5);
+                    Program.character.CHA = Convert.ToString(_CharismaMod + 5);
+
+                    break;
+                case "Elf":
+                    Program.character.DEX = Convert.ToString(_DexterityMod + 15);
+                    Program.character.CHA = Convert.ToString(_CharismaMod + 15);
+                    break;
+                case "Dwarf":
+                    Program.character.STR = Convert.ToString(_StrengthMod + 20);
+                    Program.character.PER = Convert.ToString(_PerceptionMod + 20);
+                    Program.character.CHA = Convert.ToString(_CharismaMod - 10);
+                    
+                    break;
+                case "Halfling":
+                    Program.character.DEX = Convert.ToString(_DexterityMod + 20);
+                    Program.character.INT = Convert.ToString(_IntellegenceMod + 20);
+                    Program.character.STR = Convert.ToString(_StrengthMod - 10);
+                   
+                    break;
+            }
+        }
+
         private void _initialload()
         {
             CharacterPictureBox.Image = Properties.Resources.Human;
             
 
             RacialBonusTextBox.Text = "Increase all abilities by 5";
-
-            _StrengthMod = _StrengthMod + 5;
-            _DexterityMod = _DexterityMod + 5;
-            _EnduranceMod = _EnduranceMod + 5;
-            _IntellegenceMod = _IntellegenceMod + 5;
-            _PerceptionMod = _PerceptionMod + 5;
-            _CharismaMod = _CharismaMod + 5;
-
 
             this._Race = "Human";
         }
@@ -69,15 +95,7 @@ namespace COMP1004_W2017_MidTermAssignment
 
             RacialBonusTextBox.Text = "Increase all abilities by 5";
 
-            _StrengthMod = _StrengthMod + 5;
-            _DexterityMod = _DexterityMod + 5;
-            _EnduranceMod = _EnduranceMod + 5;
-            _IntellegenceMod = _IntellegenceMod + 5;
-            _PerceptionMod = _PerceptionMod + 5;
-            _CharismaMod = _CharismaMod + 5;
-
-
-            this._Race = selectedRace.Text;
+          this._Race = selectedRace.Text;
         }
 
         private void ElfRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -86,9 +104,7 @@ namespace COMP1004_W2017_MidTermAssignment
             CharacterPictureBox.Image = Properties.Resources.Elf;
             RadioButton selectedRace = (RadioButton)sender;
             RacialBonusTextBox.Text = "Increase DEX and PER by 20";
-
-            _DexterityMod = _DexterityMod + 20;
-            _PerceptionMod = _PerceptionMod + 20;
+            
 
             this._Race = selectedRace.Text;
 
@@ -100,9 +116,6 @@ namespace COMP1004_W2017_MidTermAssignment
             RadioButton selectedRace = (RadioButton)sender;
             RacialBonusTextBox.Text = "Increase STR and PER by 20, Decrease CHA by 10";
 
-            _StrengthMod = _StrengthMod + 20;
-            _PerceptionMod = _PerceptionMod + 20;
-            _CharismaMod = _CharismaMod - 10;
             this._Race = selectedRace.Text;
 
         }
@@ -113,10 +126,6 @@ namespace COMP1004_W2017_MidTermAssignment
             RadioButton selectedRace = (RadioButton)sender;
 
             RacialBonusTextBox.Text = "Increase DEX and INT by 20, Decrease STR by 10";
-            _DexterityMod = _DexterityMod + 20;
-            _IntellegenceMod = _IntellegenceMod + 20;
-            _StrengthMod = _StrengthMod - 10;
-
             this._Race = selectedRace.Text;
 
         }
