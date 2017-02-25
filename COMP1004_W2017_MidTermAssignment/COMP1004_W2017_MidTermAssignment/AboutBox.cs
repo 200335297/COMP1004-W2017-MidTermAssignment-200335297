@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*******************************
+ * Application: COMP1004-W2017
+ * Author: Gowtham Talluri
+ * Student ID: 200335297
+ * Date: Feb 02, 2017 
+ * 
+ * Description: This application uses to Character	Generator
+ *  
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
