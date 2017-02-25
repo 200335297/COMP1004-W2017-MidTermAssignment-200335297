@@ -100,6 +100,8 @@ namespace COMP1004_W2017_MidTermAssignment
                 return ((AssemblyCompanyAttribute)attributes[0]).Company;
             }
         }
+
+       
         #endregion
     }
 }

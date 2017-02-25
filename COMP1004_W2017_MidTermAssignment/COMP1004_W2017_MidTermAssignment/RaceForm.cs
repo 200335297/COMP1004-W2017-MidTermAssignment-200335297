@@ -83,7 +83,7 @@ namespace COMP1004_W2017_MidTermAssignment
             CharacterPictureBox.Image = Properties.Resources.Human;
             
 
-            RacialBonusTextBox.Text = "Increase all Character’s	 abilities by 5 points";
+            RacialBonusTextBox.Text = "Increase all Character’s abilities by 5 points";
 
             this._Race = "Human";
         }
@@ -93,7 +93,7 @@ namespace COMP1004_W2017_MidTermAssignment
             CharacterPictureBox.Image = Properties.Resources.Human;
             RadioButton selectedRace = (RadioButton)sender;
 
-            RacialBonusTextBox.Text = "Increase all Character’s	 abilities by 5 points";
+            RacialBonusTextBox.Text = "Increase all Character’s abilities by 5 points";
 
           this._Race = selectedRace.Text;
         }
@@ -103,7 +103,7 @@ namespace COMP1004_W2017_MidTermAssignment
 
             CharacterPictureBox.Image = Properties.Resources.Elf;
             RadioButton selectedRace = (RadioButton)sender;
-            RacialBonusTextBox.Text = "Increase	the	Character’s	DEX and	CHA by	15 points";
+            RacialBonusTextBox.Text = "Increase the Character’s DEX and CHA by 15 points";
             
 
             this._Race = selectedRace.Text;
